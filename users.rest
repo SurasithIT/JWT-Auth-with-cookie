@@ -1,0 +1,17 @@
+GET http://localhost:3000/api/users
+
+###
+
+GET http://localhost:3000/api/users
+Cookie: Bearer=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiTW9vayIsInJvbGUiOiJjdXN0b21lciIsImlhdCI6MTU4MzQxODAzMywiZXhwIjoxNTgzNDE4MTMzfQ.-UnFd8_cJ1v34gXj-NgaKTsOQOVojd2UN0zGe4LVNFk; Max-Age=3; Path=/; Expires=Thu, 05 Mar 2020 14:20:37 GMT; HttpOnly
+###
+
+POST http://localhost:3000/auth/login
+Content-Type: application/json
+
+{
+    "name": "Mook"
+}
+
+###
+DELETE http://localhost:3000/logout
